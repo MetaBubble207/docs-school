@@ -59,8 +59,10 @@ export const homeTranslations: Record<string, HomeTranslations> = {
     competitions: [
       { name: "Lanqiao Cup", time: "March-April", icon: "Code" },
       { name: "Computer Design Contest", time: "April-May", icon: "FileCode" },
-      { name: "Mathematical Modeling", time: "September", icon: "BookOpen" },
-      { name: "Challenge Cup", time: "October-November", icon: "Trophy" },
+      { name: "China International College Students' Innovation Competition", time: "September-October", icon: "Globe" },
+      { name: "National College Students' Mathematical Modeling Competition", time: "September", icon: "BarChart2" },
+      { name: "Challenge Cup - National College Students' Extracurricular Academic Science and Technology Contest", time: "October (biennial)", icon: "Award" },
+      { name: "Challenge Cup - Chinese College Students' Entrepreneurship Plan Competition", time: "April-May (biennial)", icon: "Briefcase" },
     ],
     cta: {
       title: "Welcome to MetaBubble Lab",
@@ -103,8 +105,10 @@ export const homeTranslations: Record<string, HomeTranslations> = {
     competitions: [
       { name: "蓝桥杯", time: "每年3-4月", icon: "Code" },
       { name: "计算机设计大赛", time: "每年4-5月", icon: "FileCode" },
-      { name: "数学建模大赛", time: "每年9月", icon: "BookOpen" },
-      { name: "挑战杯", time: "每年10-11月", icon: "Trophy" },
+      { name: "中国国际大学生创新竞赛", time: "每年9-10月", icon: "Globe" },
+      { name: "全国大学生数学建模竞赛", time: "每年9月", icon: "BarChart2" },
+      { name: "\"挑战杯\"全国大学生课外学术科技作品竞赛（大挑）", time: "每两年10月", icon: "Award" },
+      { name: "\"挑战杯\"中国大学生创业计划竞赛（小挑）", time: "每两年4-5月", icon: "Briefcase" },
     ],
     cta: {
       title: "MetaBubble 实验室欢迎你",
