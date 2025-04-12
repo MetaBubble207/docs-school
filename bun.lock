@@ -4,6 +4,9 @@
     "": {
       "name": "metabubble-docs",
       "dependencies": {
+        "@orama/orama": "^3.1.3",
+        "@orama/stopwords": "^3.1.3",
+        "@orama/tokenizers": "^3.1.3",
         "fumadocs-core": "15.2.6",
         "fumadocs-mdx": "11.5.8",
         "fumadocs-ui": "15.2.6",
@@ -179,6 +182,10 @@
     "@nolyfill/is-core-module": ["@nolyfill/is-core-module@1.0.39", "", {}, "sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA=="],
 
     "@orama/orama": ["@orama/orama@3.1.5", "", {}, "sha512-iAy2H6VWbS/fFLkbioGec5g3uDNj65+wpADL8k1RbxEGoquIPl3xqYMKux30dJV97Rr1OnXgC0kCLWRQi/Mrdg=="],
+
+    "@orama/stopwords": ["@orama/stopwords@3.1.5", "", {}, "sha512-Cclf3ilu9S4pBK3OBrl3T5dMNzquXmpCQRDjZY+6VdQUCZUZD2AG9/CLnma/FsIurYT/4So0RFMNlBEuI/702g=="],
+
+    "@orama/tokenizers": ["@orama/tokenizers@3.1.5", "", { "dependencies": { "@orama/orama": "3.1.5" } }, "sha512-oou/N1X4QJFuREkTwX0OM4l4f30WvRdFlyaIsuf0k3498+CicckY3RD8YTqqpCu7i0t6+nBw2FXnkZLyVuaBJg=="],
 
     "@radix-ui/number": ["@radix-ui/number@1.1.1", "", {}, "sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g=="],
 

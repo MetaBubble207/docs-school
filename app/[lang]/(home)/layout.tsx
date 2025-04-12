@@ -1,13 +1,14 @@
-import type { ReactNode } from 'react';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
-import { baseOptions } from '@/app/layout.config';
+import type { ReactNode } from "react";
+import { HomeLayout } from "fumadocs-ui/layouts/home";
+import { baseOptions } from "@/app/layout.config";
 
-export default function Layout({
+export default async function Layout({
   params,
   children,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
   children: ReactNode;
 }) {
-  return <HomeLayout {...baseOptions(params.lang)}>{children}</HomeLayout>;
-} 
+  const lang = (await params).lang;
+  return <HomeLayout {...baseOptions(lang)}>{children}</HomeLayout>;
+}

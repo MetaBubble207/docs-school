@@ -9,6 +9,21 @@ import { i18n } from '@/lib/i18n';
  * Docs Layout: app/docs/layout.tsx
  */
 export function baseOptions(locale: string): BaseLayoutProps {
+  // 多语言导航配置
+  const navTexts = {
+    en: {
+      appName: 'My App',
+      docs: 'Documentation'
+    },
+    zh: {
+      appName: '我的应用',
+      docs: '文档'
+    }
+  };
+
+  // 获取当前语言文本，不存在则使用英文
+  const texts = navTexts[locale as keyof typeof navTexts] || navTexts.en;
+
   return {
     i18n,
     nav: {
@@ -22,13 +37,13 @@ export function baseOptions(locale: string): BaseLayoutProps {
           >
             <circle cx={12} cy={12} r={12} fill="currentColor" />
           </svg>
-          My App
+          {texts.appName}
         </>
       ),
     },
     links: [
       {
-        text: 'Documentation',
+        text: texts.docs,
         url: `/${locale}/docs`,
         active: 'nested-url',
       },
