@@ -3,17 +3,18 @@ import type { ReactNode } from 'react';
 import { baseOptions } from '@/app/layout.config';
 import { source } from '@/lib/source';
 
-export default function Layout({
+export default async function Layout({
   params,
   children,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
   children: ReactNode;
 }) {
+  const lang = (await params).lang;
   return (
     <DocsLayout 
-      tree={source.pageTree[params.lang] || source.pageTree.en} 
-      {...baseOptions(params.lang)}
+      tree={source.pageTree[lang] || source.pageTree.en} 
+      {...baseOptions(lang)}
     >
       {children}
     </DocsLayout>
