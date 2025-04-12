@@ -1,5 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import { i18n } from '@/lib/i18n';
+import { i18n, navTranslations } from '@/lib/i18n';
 
 /**
  * Shared layout configurations
@@ -9,20 +9,8 @@ import { i18n } from '@/lib/i18n';
  * Docs Layout: app/docs/layout.tsx
  */
 export function baseOptions(locale: string): BaseLayoutProps {
-  // 多语言导航配置
-  const navTexts = {
-    en: {
-      appName: 'My App',
-      docs: 'Documentation'
-    },
-    zh: {
-      appName: '我的应用',
-      docs: '文档'
-    }
-  };
-
-  // 获取当前语言文本，不存在则使用英文
-  const texts = navTexts[locale as keyof typeof navTexts] || navTexts.en;
+  // 获取当前语言的导航文本，不存在则使用英文
+  const texts = navTranslations[locale] || navTranslations.en;
 
   return {
     i18n,

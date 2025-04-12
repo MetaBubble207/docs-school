@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { homeTranslations } from "@/lib/i18n";
+import { HeroSection, FeaturesSection, CompetitionSection, CTASection } from "@/components/home/AnimatedSection";
 
 export default async function HomePage({
   params,
@@ -6,39 +7,23 @@ export default async function HomePage({
   params: Promise<{ lang: string }>;
 }) {
   const lang = (await params).lang;
-  const content = {
-    en: {
-      title: "Hello World",
-      description: "You can open ",
-      docLink: "/docs",
-      docLinkText: "Docs",
-      endText: " and see the documentation.",
-    },
-    zh: {
-      title: "你好，世界",
-      description: "你可以打开 ",
-      docLink: "/docs",
-      docLinkText: "文档",
-      endText: " 查看更多内容。",
-    },
-  };
-
-  const { title, description, docLink, docLinkText, endText } =
-    content[lang as keyof typeof content] || content.en;
+  
+  // 获取当前语言的翻译内容，如果不存在则使用英文
+  const translations = homeTranslations[lang] || homeTranslations.en;
 
   return (
-    <main className="flex flex-1 flex-col justify-center text-center">
-      <h1 className="mb-4 text-2xl font-bold">{title}</h1>
-      <p className="text-fd-muted-foreground">
-        {description}
-        <Link
-          href={`/${lang}${docLink}`}
-          className="text-fd-foreground font-semibold underline"
-        >
-          {docLinkText}
-        </Link>
-        {endText}
-      </p>
-    </main>
+    <div className="min-h-screen px-4 md:px-6 py-12">
+      {/* 英雄区域 */}
+      <HeroSection lang={lang} translations={translations} />
+      
+      {/* 特性区域 */}
+      <FeaturesSection lang={lang} translations={translations} />
+      
+      {/* 比赛时间线 */}
+      <CompetitionSection lang={lang} translations={translations} />
+      
+      {/* 行动号召 */}
+      <CTASection lang={lang} translations={translations} />
+    </div>
   );
 }
