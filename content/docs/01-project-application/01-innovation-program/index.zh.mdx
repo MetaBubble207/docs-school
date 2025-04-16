@@ -3,6 +3,8 @@ title: 大学生创新创业训练计划项目
 description: 大学生创新创业训练计划项目（大创）概述
 ---
 
+import { Card } from 'fumadocs-ui/components/card'
+
 # 大学生创新创业训练计划项目
 
 大学生创新创业训练计划项目（简称"大创"）是个听起来很高大上的项目，其实说白了就是让你在大学期间提前体验一把"做研究"或"创业"的感觉，顺便培养点创新能力和团队合作精神。（不要担心，不会让你真的一人创立下一个腾讯或阿里巴巴）
@@ -74,11 +76,30 @@ description: 大学生创新创业训练计划项目（大创）概述
 
 ## 快速导航
 
-<Cards>
-  <Card title="项目详细介绍" href="/zh/docs/01-project-application/01-innovation-program/01-introduction" />
-  <Card title="申请流程详解" href="/zh/docs/01-project-application/01-innovation-program/02-application" />
-  <Card title="中期检查指南" href="/zh/docs/01-project-application/01-innovation-program/03-midterm" />
-  <Card title="结题报告攻略" href="/zh/docs/01-project-application/01-innovation-program/04-final-report" />
-  <Card title="经费使用与报销" href="/zh/docs/01-project-application/01-innovation-program/05-funding" />
-  <Card title="报销最速指南" href="/zh/docs/01-project-application/01-innovation-program/06-quick-reimbursement" />
-</Cards> 
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+  <Card title="项目详细介绍" href="/docs/01-project-application/01-innovation-program/01-introduction" />
+  <Card title="项目数量与分配" href="/docs/01-project-application/01-innovation-program/02-project-allocation" />
+  <Card title="申请流程详解" href="/docs/01-project-application/01-innovation-program/03-application" />
+  <Card title="中期检查指南" href="/docs/01-project-application/01-innovation-program/04-midterm" />
+  <Card title="结题报告攻略" href="/docs/01-project-application/01-innovation-program/05-final-report" />
+  <Card title="经费使用与报销" href="/docs/01-project-application/01-innovation-program/06-funding" />
+  <Card title="报销最速指南" href="/docs/01-project-application/01-innovation-program/07-quick-reimbursement" />
+  <Card title="票据粘贴说明" href="/docs/01-project-application/01-innovation-program/08-bill-pasting-instructions" />
+</div>
+
+---
+
+import { DocAuthors } from '@/components/docs/DocAuthors';
+
+<DocAuthors 
+  authors={[
+    { 
+      username: 'xiaban-x', 
+      name: 'xiaban-x', 
+      role: '主要作者', 
+      link: 'https://github.com/xiaban-x',
+      avatar: 'https://avatars.githubusercontent.com/u/101194919?v=4'
+    }
+    // Add more authors here when needed
+  ]} 
+/> 
