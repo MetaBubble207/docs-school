@@ -2,15 +2,15 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/metabubble-docs",
+  "basePath": "/docs-school",
   "redirects": [
     {
-      "source": "/metabubble-docs",
-      "destination": "/metabubble-docs/",
+      "source": "/docs-school",
+      "destination": "/docs-school/",
       "basePath": false,
       "internal": true,
       "statusCode": 308,
-      "regex": "^/metabubble-docs$"
+      "regex": "^/docs-school$"
     },
     {
       "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",

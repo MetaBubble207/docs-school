@@ -10,18 +10,18 @@
       "page": "/",
       "matchers": [
         {
-          "regexp": "^\\/metabubble-docs(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next\\/static|_next\\/image|images|favicon.ico).*))(\\.json)?[\\/#\\?]?$",
+          "regexp": "^\\/docs-school(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next\\/static|_next\\/image|images|favicon.ico).*))(\\.json)?[\\/#\\?]?$",
           "originalSource": "/((?!api|_next/static|_next/image|images|favicon.ico).*)"
         }
       ],
       "wasm": [],
       "assets": [],
       "env": {
-        "__NEXT_BUILD_ID": "zxUBEwjYeBTLBDEkgpSS5",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "bhNHwCLDtLidszgDIhzUuauXaCR/qnIJSSzGMrxHzic=",
-        "__NEXT_PREVIEW_MODE_ID": "1aad29c19523ee18d5a3f81b61b1c99a",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "3f3d1658d0d38dd7d252d8bbaf413338490e52f2fb2723fe57c3ace97bf6c745",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "c1c4bbc8fcea4c6fc3584d4e6f1aec40311817f83974af086645499fe3f690e9"
+        "__NEXT_BUILD_ID": "LzPen3nd4X2n7-5ZzVLAl",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Xix1G3UFe6LB9FjkmT4SsXVTetkelLPB5tu5CjXwS1s=",
+        "__NEXT_PREVIEW_MODE_ID": "faf3b5978d416fb848c8eef7f65428f6",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "c646d4247d308c252764379bf2f053f1f89790781a2e89a25f28ab3462532fab",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "e235c8a479014060af9876b207a4b3fea506b26e6e10190d474479165084702b"
       }
     }
   },
