@@ -74,7 +74,7 @@ powershell -c "irm bun.sh/install.ps1 | iex"
 1. 克隆仓库
 
 ```bash
-git clone https://github.com/yourusername/metabubble-docs.git
+git clone https://github.com/MetaBubble207/metabubble-docs.git
 cd metabubble-docs
 ```
 
