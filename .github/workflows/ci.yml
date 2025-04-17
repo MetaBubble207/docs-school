@@ -25,7 +25,7 @@ jobs:
       - name: 🏗️ Build project
         run: bun run build
         env:
-          NEXT_PUBLIC_BASE_PATH: '/metabubble-docs'
+          NEXT_PUBLIC_BASE_PATH: '/docs-school'
           NODE_ENV: 'production'
 
       - name: 🧪 确认构建成功
@@ -43,7 +43,7 @@ jobs:
           
           # 添加GitHub Pages所需配置
           touch .next/standalone/.nojekyll
-          echo 'metabubble-docs.github.io' > .next/standalone/CNAME
+          echo 'metabubble207.github.io' > .next/standalone/CNAME
           
           # 确认文件结构
           ls -la .next/standalone

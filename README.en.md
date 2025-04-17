@@ -6,11 +6,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MetaBubble207/metabubble-docs/actions/workflows/ci.yml">
-    <img src="https://github.com/MetaBubble207/metabubble-docs/actions/workflows/ci.yml/badge.svg" alt="Build Status" />
+  <a href="https://github.com/MetaBubble207/docs-school/actions/workflows/ci.yml">
+    <img src="https://github.com/MetaBubble207/docs-school/actions/workflows/ci.yml/badge.svg" alt="Build Status" />
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/MetaBubble207/metabubble-docs" alt="License" />
+    <img src="https://img.shields.io/github/license/MetaBubble207/docs-school" alt="License" />
   </a>
 </p>
 
