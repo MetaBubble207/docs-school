@@ -28,13 +28,25 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: '/metabubble-docs'
           NODE_ENV: 'production'
 
+      - name: 🧪 确认构建成功
+        run: ls -la .next
+
       - name: ⚙️ 配置运行时环境
         run: |
+          # 创建必要的目录结构
           mkdir -p .next/standalone/public
-          cp -r public/* .next/standalone/public/
-          cp -r .next/static .next/standalone/.next/
+          cp -r public/* .next/standalone/public/ || true
+          
+          # 复制静态资源
+          mkdir -p .next/standalone/.next/static
+          cp -r .next/static .next/standalone/.next/ || true
+          
+          # 添加GitHub Pages所需配置
           touch .next/standalone/.nojekyll
           echo 'metabubble-docs.github.io' > .next/standalone/CNAME
+          
+          # 确认文件结构
+          ls -la .next/standalone
 
       - name: 🚀 Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
