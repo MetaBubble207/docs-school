@@ -5,6 +5,15 @@
   <a href="README.en.md">English</a> 
 </p>
 
+<p align="center">
+  <a href="https://github.com/yourusername/metabubble-docs/actions/workflows/ci.yml">
+    <img src="https://github.com/yourusername/metabubble-docs/actions/workflows/ci.yml/badge.svg" alt="Build Status" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/yourusername/metabubble-docs" alt="License" />
+  </a>
+</p>
+
 MetaBubble文档中心是东莞理工学院MetaBubble实验室的综合性指南平台，涵盖创新创业训练计划（大创）项目、广东省攀登计划项目、外包项目管理、各类竞赛指南以及团队协作规范等内容。本平台旨在帮助实验室成员快速掌握项目开发、比赛参与和日常运营的全流程，提高项目成功率和团队协作效率，同时为教师和管理人员提供规范化的参考资料。
 
 ## 🚀 特性

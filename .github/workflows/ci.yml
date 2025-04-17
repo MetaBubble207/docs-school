@@ -1,0 +1,45 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: 📦 Install dependencies
+        run: bun install
+
+      - name: 🏗️ Build project
+        run: bun run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: '/metabubble-docs'
+          NODE_ENV: 'production'
+
+      - name: ⚙️ 配置运行时环境
+        run: |
+          mkdir -p .next/standalone/public
+          cp -r public/* .next/standalone/public/
+          cp -r .next/static .next/standalone/.next/
+          touch .next/standalone/.nojekyll
+          echo 'metabubble-docs.github.io' > .next/standalone/CNAME
+
+      - name: 🚀 Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .next/standalone
+          branch: gh-pages
+          clean: true 

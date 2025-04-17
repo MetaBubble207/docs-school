@@ -5,6 +5,15 @@
   <a href="README.en.md">English</a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/yourusername/metabubble-docs/actions/workflows/ci.yml">
+    <img src="https://github.com/yourusername/metabubble-docs/actions/workflows/ci.yml/badge.svg" alt="Build Status" />
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/yourusername/metabubble-docs" alt="License" />
+  </a>
+</p>
+
 The MetaBubble Documentation Center is a comprehensive guide platform for the MetaBubble Lab at Dongguan University of Technology. It covers Innovation and Entrepreneurship Training Program projects, Guangdong Province Climbing Plan projects, outsourcing project management, various competition guides, and team collaboration standards. This platform aims to help lab members quickly master the entire process of project development, competition participation, and daily operations, improve project success rates and team collaboration efficiency, and provide standardized reference materials for teachers and administrators.
 
 ## 🚀 Features
